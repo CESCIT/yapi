@@ -36,7 +36,11 @@ const alertContent = () => {
 let AppRoute = {
   home: {
     path: '/',
-    component: Home
+    component: Login
+  },
+  login: {
+    path: '/login',
+    component: Login
   },
   group: {
     path: '/group',
@@ -57,10 +61,6 @@ let AppRoute = {
   addProject: {
     path: '/add-project',
     component: AddProject
-  },
-  login: {
-    path: '/login',
-    component: Login
   }
 };
 // 增加路由钩子
@@ -142,7 +142,7 @@ export default class App extends Component {
                 {/* <Route path="/statistic" component={statisticsPage} /> */}
               {/* </div> */}
             </div>
-            <Footer />
+            {/*<Footer />*/}
           </div>
         </Router>
       );
