@@ -30,7 +30,7 @@ export default class BreadcrumbNavigation extends Component {
           </Breadcrumb.Item>
         );
       } else {
-        return <Breadcrumb.Item key={index}>{item.name}</Breadcrumb.Item>;
+        return <Breadcrumb.Item key={index}>数据汇聚共享服务系统</Breadcrumb.Item>;
       }
     });
     return (
