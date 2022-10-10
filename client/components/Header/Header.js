@@ -82,14 +82,10 @@ const tipAdd = (
 const tipDoc = (
   <div className="title-container">
     <h3 className="title">
-      使用文档 <Tag color="orange">推荐!</Tag>
+      最后
     </h3>
     <p>
-      初次使用 YApi，强烈建议你阅读{' '}
-      <a target="_blank" href="https://hellosean1025.github.io/yapi/" rel="noopener noreferrer">
-        使用文档
-      </a>
-      ，我们为你提供了通俗易懂的快速入门教程，更有详细的使用说明，欢迎阅读！{' '}
+      欢迎使用 数据汇聚共享服务系统！
     </p>
   </div>
 );
