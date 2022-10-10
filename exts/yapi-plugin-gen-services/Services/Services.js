@@ -26,7 +26,7 @@ export default class Services extends Component {
   async componentDidMount() {
     const id = this.props.projectId;
     await this.props.getToken(id);
-    
+
   }
   render () {
     const id = this.props.projectId;
@@ -44,9 +44,9 @@ export default class Services extends Component {
   `}</pre>
             <pre>{`
   {
-    "url": "yapi-swagger.json",
+    "url": "swagger.json",
     "remoteUrl": "${location.protocol}//${location.hostname}${location.port ? `:${location.port}` : ''}/api/open/plugin/export-full?type=json&pid=${id}&status=all&token=${this.props.token}",
-    "type": "yapi",
+    "type": "swagger",
     "swaggerParser": {}
   }
   `}
@@ -58,7 +58,7 @@ export default class Services extends Component {
             <pre>{`
   {
     "url": "${location.protocol}//${location.hostname}${location.port ? `:${location.port}` : ''}/api/open/plugin/export-full?type=json&pid=${id}&status=all&token=${this.props.token}",
-    "type": "yapi",
+    "type": "swagger",
     "swaggerParser": {}
   }
   `}
